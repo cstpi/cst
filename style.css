@@ -59,7 +59,7 @@
       .navbar-nav {
         flex-direction: row !important;
         flex-wrap: nowrap !important;
-        gap: 0.25rem !important;
+        gap: 0.15rem !important;
       }
       
       .navbar-nav .nav-item {
@@ -68,23 +68,25 @@
       
       .navbar-nav .nav-link {
         white-space: nowrap;
-        padding: 0.5rem 0.85rem !important;
-        font-size: 0.85rem;
+        padding: 0.4rem 0.65rem !important;
+        font-size: 0.75rem !important;
+        letter-spacing: 0.2px;
       }
     }
 
     @media (min-width: 992px) and (max-width: 1199px) {
       .navbar-nav {
         flex-direction: row !important;
-        flex-wrap: wrap !important;
+        flex-wrap: nowrap !important;
         justify-content: flex-end;
-        gap: 0.15rem !important;
+        gap: 0.1rem !important;
       }
       
       .navbar-nav .nav-link {
         white-space: nowrap;
-        padding: 0.5rem 0.7rem !important;
-        font-size: 0.8rem;
+        padding: 0.4rem 0.55rem !important;
+        font-size: 0.7rem !important;
+        letter-spacing: 0.1px;
       }
     }
 
@@ -92,12 +94,12 @@
       .navbar-nav {
         flex-direction: row !important;
         flex-wrap: wrap !important;
-        gap: 0.25rem !important;
+        gap: 0.15rem !important;
       }
       
       .navbar-nav .nav-link {
-        padding: 0.4rem 0.6rem !important;
-        font-size: 0.75rem;
+        padding: 0.35rem 0.5rem !important;
+        font-size: 0.7rem !important;
       }
     }
 
@@ -161,7 +163,7 @@
 
     /* Icon spacing */
     .navbar-nav .nav-link i {
-      margin-right: 5px;
+      margin-right: 4px;
       transition: all 0.3s ease;
     }
 
@@ -171,11 +173,12 @@
       color: white !important;
       box-shadow: 0 2px 8px rgba(30, 90, 111, 0.25);
       border-radius: 50px;
-      padding: 0.5rem 0.85rem !important;
+      padding: 0.4rem 0.65rem !important;
       font-weight: 500;
       transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
       display: inline-block;
       cursor: pointer;
+      font-size: 0.75rem !important;
     }
 
     .student-login-trigger::before {
@@ -201,21 +204,36 @@
       transform: scale(1.02);
     }
 
-    /* মোবাইল ভিউ */
-    @media (max-width: 767px) {
+    /* ========== IMPROVED RESPONSIVE MENU ========== */
+    @media (max-width: 991.98px) {
+      .navbar .container {
+        padding: 0 1rem;
+      }
+      
       .navbar-collapse {
-        margin-top: 1rem;
+        margin-top: 0.75rem;
+        padding: 0.5rem 0;
+        border-top: 1px solid rgba(0,0,0,0.05);
       }
       
       .navbar-nav {
         flex-direction: column !important;
-        gap: 0.5rem !important;
+        gap: 0.3rem !important;
+        width: 100%;
+        padding: 0.5rem 0;
+      }
+      
+      .navbar-nav .nav-item {
+        width: 100%;
       }
       
       .navbar-nav .nav-link {
-        text-align: center;
         display: block;
+        width: 100%;
+        text-align: center;
         padding: 0.6rem 1rem !important;
+        font-size: 0.9rem;
+        border-radius: 12px;
       }
       
       .navbar-nav .nav-link::before {
@@ -225,15 +243,49 @@
       .navbar-nav .nav-link:hover {
         background: linear-gradient(135deg, #1e5a6f, #f5b042);
         color: white !important;
+        transform: none;
+      }
+      
+      .navbar-nav .nav-link.active {
+        background: linear-gradient(135deg, #1e5a6f, #f5b042);
+        color: white !important;
       }
       
       .student-login-trigger {
         display: block;
         text-align: center;
         padding: 0.6rem 1rem !important;
+        margin-top: 0.2rem;
+        font-size: 0.9rem !important;
+      }
+      
+      /* Make brand text smaller on mobile */
+      .navbar-brand {
+        font-size: 0.95rem;
+        gap: 6px;
+      }
+      
+      .brand-logo {
+        height: 32px;
       }
     }
-    /* ========== END MENU BAR STYLES ========== */
+
+    @media (max-width: 575.98px) {
+      .navbar-brand {
+        font-size: 0.8rem;
+        gap: 5px;
+      }
+      
+      .brand-logo {
+        height: 28px;
+      }
+      
+      .navbar-nav .nav-link {
+        font-size: 0.8rem;
+        padding: 0.5rem 0.8rem !important;
+      }
+    }
+    /* ========== END RESPONSIVE MENU ========== */
 
     /* Buttons */
     .btn-custom {
@@ -992,4 +1044,127 @@
     .student-login-trigger {
       cursor: pointer;
       transition: all 0.2s;
+    }
+
+    /* ===== ROUTINE TABLE STYLES ===== */
+    .routine-table {
+      border-collapse: collapse;
+      width: 100%;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.05);
+      border-radius: 20px;
+      overflow: hidden;
+    }
+    .routine-table th {
+      background: #1e5a6f;
+      color: white;
+      font-weight: 600;
+      font-size: 0.9rem;
+      padding: 14px 10px;
+      text-align: center;
+    }
+    .routine-table td {
+      padding: 14px 8px;
+      text-align: center;
+      vertical-align: middle;
+      border-bottom: 1px solid #eef2f6;
+      background: white;
+      font-size: 0.8rem;
+    }
+    .routine-table tr:last-child td {
+      border-bottom: none;
+    }
+    .routine-table .time-col {
+      font-weight: 600;
+      color: #1e3c4c;
+      background: #f8fafc;
+      width: 100px;
+    }
+    .routine-table .subject-code {
+      display: inline-block;
+      background: #eef2ff;
+      padding: 2px 8px;
+      border-radius: 20px;
+      font-size: 0.7rem;
+      font-weight: 600;
+      color: #1e5a6f;
+      margin-right: 4px;
+    }
+    .routine-table .room-badge {
+      display: inline-block;
+      background: #fef9e6;
+      padding: 2px 8px;
+      border-radius: 20px;
+      font-size: 0.65rem;
+      font-weight: 500;
+      color: #b45309;
+    }
+    .routine-table .slot-empty {
+      color: #adb5bd;
+      font-size: 0.8rem;
+    }
+    .routine-table .break-row {
+      background: #f8fafc;
+      font-weight: 500;
+      color: #475569;
+    }
+    .routine-table .break-row td {
+      background: #f8fafc;
+    }
+    .routine-header-info {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 15px;
+      background: #f8fafc;
+      padding: 18px 24px;
+      border-radius: 20px;
+      margin-bottom: 24px;
+      border-left: 5px solid #f5b042;
+    }
+    .routine-header-info .info-item {
+      font-size: 0.9rem;
+      color: #1e293b;
+    }
+    .routine-header-info .info-item i {
+      color: #f5b042;
+      width: 22px;
+    }
+    .routine-header-info .info-item strong {
+      color: #0c4a6e;
+    }
+
+    @media (max-width: 768px) {
+      .routine-table th, .routine-table td {
+        padding: 10px 6px;
+        font-size: 0.7rem;
+      }
+      .routine-table .time-col {
+        width: 70px;
+        font-size: 0.7rem;
+      }
+      .routine-header-info {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+        padding: 14px 16px;
+      }
+    }
+    @media (max-width: 576px) {
+      .routine-table th, .routine-table td {
+        padding: 8px 4px;
+        font-size: 0.6rem;
+      }
+      .routine-table .time-col {
+        width: 60px;
+        font-size: 0.6rem;
+      }
+      .routine-table .subject-code {
+        font-size: 0.6rem;
+        padding: 1px 6px;
+      }
+      .routine-table .room-badge {
+        font-size: 0.55rem;
+        padding: 1px 6px;
+      }
     }
