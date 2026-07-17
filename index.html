@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <link rel="stylesheet" href="style.css">
   <meta charset="UTF-8">
@@ -9,6 +8,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <title>Thakurgaon Polytechnic Institute | CST Department</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -31,9 +31,10 @@
           <li class="nav-item"><a class="nav-link" href="#" data-page="student">📚 Student</a></li>
           <li class="nav-item"><a class="nav-link" href="#" data-page="coursestructure">📖 Course Structure</a></li>
           <li class="nav-item"><a class="nav-link" href="#" data-page="software">💻 Software</a></li>
-          <li class="nav-item"><a class="nav-link" href="#" data-page="classtest">📄 Class-Test-Result</a></li>
+          <li class="nav-item"><a class="nav-link" href="classtest.html" data-page="classtest">📄 Class-Test-Result</a></li>
           <li class="nav-item"><a class="nav-link" href="#" data-page="midterm">📑 Midterm-Result</a></li>
           <li class="nav-item"><a class="nav-link" href="#" data-page="semester">🎓 Semester-Result</a></li>
+          <li class="nav-item"><a class="nav-link" href="#" data-page="routine">📅 Routine</a></li>
           <li class="nav-item"><a class="nav-link student-login-trigger" href="#" id="studentLoginTriggerBtn">🔐 Login</a></li>
           <li class="nav-item"><a class="nav-link" href="#" data-page="notice">📢 Notice</a></li>
         </ul>
@@ -424,7 +425,7 @@
     </div>
 
     <!-- CLASS TEST PAGE -->
-   <div id="classtestPage" class="page-section d-none">
+        <div id="classtestPage" class="page-section d-none">
       <h2 class="fw-bold mb-4"><i class="fas fa-file-pdf text-danger me-2"></i> Class Test Results</h2>
       <p class="text-muted mb-3">Click on any card to view/download PDF result.</p>
       <div class="row g-4">
@@ -452,6 +453,7 @@
 
       </div>
     </div>
+
 
     <!-- MIDTERM PAGE -->
     <div id="midtermPage" class="page-section d-none">
@@ -496,27 +498,147 @@
       <div class="alert alert-warning mt-4">Replace # with actual semester PDF links.</div>
     </div>
 
-    <!-- NOTICE PAGE -->
-    <div id="noticePage" class="page-section d-none">
-      <div class="d-flex justify-content-between align-items-center mb-4">
-        <h2 class="fw-bold"><i class="fas fa-bullhorn text-warning"></i> Notice Board</h2>
+    <!-- ===================== ROUTINE PAGE (Updated Professional) ===================== -->
+    <div id="routinePage" class="page-section d-none">
+      <div class="card card-hover p-4 border-0 shadow-sm">
+        <div class="text-center mb-4">
+          <i class="fas fa-calendar-alt" style="font-size: 3.2rem; color:#1e5a6f;"></i>
+          <h2 class="fw-bold mt-2" style="color: #0c4a6e;">📅 Class Routine</h2>
+          <p class="text-muted">Computer Science & Technology Department</p>
+        </div>
+
+        <!-- Header Info Box -->
+        <div class="routine-header-info">
+          <span class="info-item"><i class="fas fa-calendar-check"></i> <strong>Class Start:</strong> 20 July 2026</span>
+          <span class="info-item"><i class="fas fa-tag"></i> <strong>Tech:</strong> CST</span>
+          <span class="info-item"><i class="fas fa-user-tie"></i> <strong>Teacher:</strong> Md. Sabbir Hosen (Jr. Instructor)</span>
+          <span class="info-item"><i class="fas fa-hourglass-half"></i> <strong>Shift:</strong> 2<sup>nd</sup> (Afternoon)</span>
+          <span class="info-item"><i class="fas fa-clock"></i> <strong>Total Load:</strong> 22</span>
+        </div>
+
+        <div class="table-responsive">
+          <table class="routine-table table-bordered">
+            <thead>
+              <tr>
+                <th style="width: 90px;">Time</th>
+                <th>Sunday</th>
+                <th>Monday</th>
+                <th>Tuesday</th>
+                <th>Wednesday</th>
+                <th>Thursday</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- Period 1 -->
+              <tr>
+                <td class="time-col">1:30 – 3:45</td>
+                <td><span class="subject-code">28521</span> <span class="room-badge">C-2B</span> <span class="room-badge">SW-2</span></td>
+                <td><span class="subject-code">28521</span> <span class="room-badge">C-2A</span> <span class="room-badge">SW-2</span></td>
+                <td class="slot-empty">—</td>
+                <td><span class="subject-code">28522</span> <span class="room-badge">C-2A</span> <span class="room-badge">SW-1</span></td>
+                <td><span class="subject-code">28554</span> <span class="room-badge">C-5</span> <span class="room-badge">NWL</span></td>
+              </tr>
+              <!-- Period 2 -->
+              <tr>
+                <td class="time-col">2:15 – 3:00</td>
+                <td><span class="subject-code">28521</span> <span class="room-badge">C-2B</span> <span class="room-badge">SW-2</span></td>
+               <td><span class="subject-code">28521</span> <span class="room-badge">C-2A</span> <span class="room-badge">SW-2</span></td>
+                <td class="slot-empty">—</td>
+                <td><span class="subject-code">28522</span> <span class="room-badge">C-2A</span> <span class="room-badge">SW-1</span></td>
+                <td><span class="subject-code">28554</span> <span class="room-badge">C-5</span> <span class="room-badge">NWL</span></td>
+              </tr>
+              <!-- Period 3 -->
+              <tr>
+                <td class="time-col">3:00 – 3:45</td>
+                <td><span class="subject-code">28521</span> <span class="room-badge">C-2B</span> <span class="room-badge">SW-2</span></td>
+                <td><span class="subject-code">28521</span> <span class="room-badge">C-2A</span> <span class="room-badge">SW-2</span></td>
+                <td class="slot-empty">--</td>
+                <td><span class="subject-code">28521</span> <span class="room-badge">C-2A</span> <span class="room-badge">415</span></td>
+                <td><span class="subject-code">28554</span> <span class="room-badge">C-5</span> <span class="room-badge">NWL</span></td>
+              </tr>
+              <!-- Break Row -->
+              <tr class="break-row">
+                <td class="time-col">3:45 – 4:30</td>
+                <td><span class="subject-code">28554</span> <span class="room-badge">5th Semester</span> <span class="room-badge">R-512</span></td>
+                <td><span class="subject-code">28554</span> <span class="room-badge">5th Semester</span> <span class="room-badge">R-512</span></td>
+                <td><span class="subject-code">28521</span> <span class="room-badge">C-2B</span> <span class="room-badge">414</span></td>
+                <td class="slot-empty">--</td>
+                <td><span class="subject-code">28521</span> <span class="room-badge">C-2A</span> <span class="room-badge">415</span></td>
+                
+    
+              </tr>
+
+              <!-- Period 5 -->
+              <tr>
+                <td class="time-col">4:30 – 5:15</td>
+                <td><span class="subject-code">28522</span> <span class="room-badge">C-2A</span> <span class="room-badge">SW-1</span></td>
+                <td><span class="subject-code">28521</span> <span class="room-badge">C-2B</span> <span class="room-badge">414</span></td>
+                <td class="slot-empty">—</td>
+                <td class="slot-empty">—</td>
+                <td class="slot-empty">—</td>
+              </tr>
+              <!-- Period 6 -->
+              <tr>
+                <td class="time-col">5:15 – 6:00</td>
+                <td><span class="subject-code">28522</span> <span class="room-badge">C-2A</span> <span class="room-badge">SW-1</span></td>
+                <td class="slot-empty">—</td>
+                <td><span class="subject-code">28554</span> <span class="room-badge">C-5</span> <span class="room-badge">410</span></td>
+                <td class="slot-empty">—</td>
+                <td class="slot-empty">—</td>
+              </tr>
+              <!-- Period 7 -->
+              <tr>
+                <td class="time-col">6:00 – 6:45</td>
+                <td><span class="subject-code">28522</span> <span class="room-badge">C-2A</span> <span class="room-badge">SW-1</span></td>
+                <td class="slot-empty">—</td>
+                <td class="slot-empty">—</td>
+                <td><span class="subject-code">28521</span> <span class="room-badge">C-2A</span> <span class="room-badge">415</span></td>
+                <td class="slot-empty">—</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="mt-4 d-flex flex-wrap gap-3 justify-content-between align-items-center bg-light p-3 rounded-4">
+          <div><i class="fas fa-info-circle text-warning me-2"></i> <strong>Note:</strong> Routine subject to change. Check department notice board for updates.</div>
+          <div><span class="badge bg-primary me-1"><i class="fas fa-print"></i> Print</span> <span class="badge bg-secondary"><i class="fas fa-download"></i> Download</span></div>
+        </div>
       </div>
-      <div class="notice-list">
-        <div class="notice-item">
-          <h5 class="fw-bold"><i class="fas fa-check-circle text-success"></i> Midterm Exam Schedule Released</h5>
-          <p>Midterm examinations from 7th June to 12th June 2026. <br><small class="text-muted">Published: 10 April 2025</small></p>
-        </div>
-        <div class="notice-item">
-          <h5 class="fw-bold"><i class="fas fa-user-graduate"></i> Semester Final Registration Extended</h5>
-          <p>Last date: 30th May 2025 with late fee.</p><small>Issued: 05 April 2025</small>
-        </div>
-        <div class="notice-item">
-          <h5 class="fw-bold"><i class="fas fa-laptop-code"></i> Web Dev Workshop (MERN Stack)</h5>
-          <p>20-21 April 2025, CST Lab 3</p><small>Posted: 01 April 2025</small>
-        </div>
-      </div>
-      <div class="mt-4 p-3 bg-white border rounded-3"><i class="fas fa-edit text-warning"></i> Admin can add notices manually.</div>
     </div>
+
+    <!-- NOTICE PAGE -->
+    <!-- NOTICE PAGE -->
+<div id="noticePage" class="page-section d-none">
+  <div class="d-flex justify-content-between align-items-center mb-4">
+    <h2 class="fw-bold"><i class="fas fa-bullhorn text-warning"></i> Notice Board</h2>
+  </div>
+  <div class="notice-list">
+    <!-- নতুন আইটেম যোগ করুন (শুরুর দিকে) -->
+    <div class="notice-item">
+      <h5 class="fw-bold"><i class="fas fa-file-pdf text-danger"></i> Semester Final Routine 2026</h5>
+      <p>Download the semester final examination routine for all departments. <br>
+        <a href="pdf/semesterfinal_2026.pdf" target="_blank" class="btn btn-danger btn-sm mt-2">
+          <i class="fas fa-download"></i> Download PDF
+        </a>
+      </p>
+      <small class="text-muted">Published: 15 July 2026</small>
+    </div>
+    
+    <div class="notice-item">
+      <h5 class="fw-bold"><i class="fas fa-check-circle text-success"></i> Semester Final Exam Schedule Released</h5>
+      <p>Semester examinations from 6th August to 6th September 2026. <br><small class="text-muted">Published: 12 july 2026</small></p>
+    </div>
+    <div class="notice-item">
+      <h5 class="fw-bold"><i class="fas fa-user-graduate"></i> Semester Final Registration Extended</h5>
+      <p>Last date: 10th july 2026 with late fee.</p><small>Issued: 02 july 2026</small>
+    </div>
+    <div class="notice-item">
+      <h5 class="fw-bold"><i class="fas fa-laptop-code"></i> Web Dev Workshop (MERN Stack)</h5>
+      <p>20-21 April 2025, CST Lab 3</p><small>Posted: 01 April 2025</small>
+    </div>
+  </div>
+  <div class="mt-4 p-3 bg-white border rounded-3"><i class="fas fa-edit text-warning"></i> Admin can add notices manually.</div>
+</div>
   </div>
 
   <!-- STUDENT LOGIN MODAL -->
@@ -581,8 +703,8 @@
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
   <script>
-    // Page navigation - FIXED: Ensure home page shows first
-    const sections = { home: 'homePage', teacher: 'teacherPage', student: 'studentPage', coursestructure: 'coursestructurePage', software: 'softwarePage', classtest: 'classtestPage', midterm: 'midtermPage', semester: 'semesterPage', notice: 'noticePage' };
+    // Page navigation - Updated to include routine
+    const sections = { home: 'homePage', teacher: 'teacherPage', student: 'studentPage', coursestructure: 'coursestructurePage', software: 'softwarePage', classtest: 'classtestPage', midterm: 'midtermPage', semester: 'semesterPage', routine: 'routinePage', notice: 'noticePage' };
     
     function showPage(pageId) { 
       // Hide all sections
@@ -935,5 +1057,4 @@
     })();
   </script>
 </body>
-
 </html>
