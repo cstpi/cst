@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style_2.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <title>Thakurgaon Polytechnic Institute | CST Department</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- Bootstrap 5 -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  
 
 </head>
-
 <body>
 
-  <!-- ======================= NAVBAR / MENU ======================= -->
+  <!-- ======================= NAVBAR ======================= -->
   <nav class="navbar navbar-expand-lg sticky-top bg-white shadow-sm">
     <div class="container">
       <a class="navbar-brand fw-bold" href="#" style="font-size: 17px;">
@@ -65,20 +68,43 @@
         </div>
       </div>
 
-      <!-- Image Slider -->
+      <!-- ========== ENHANCED SLIDER (squared, taller, interactive) ========== -->
       <div class="image-slider-section">
         <div class="slider-container">
           <div class="slider-images" id="sliderImages">
+            <img class="slider-img" src="image/ss9.jpg" alt="Workshop">
+            <img class="slider-img" src="image/ss13.jpg" alt="Workshop">
+            <img class="slider-img" src="image/ss8.jpg" alt="Workshop">
+            <img class="slider-img" src="image/ss10.jpg" alt="Workshop">
+            <img class="slider-img" src="image/ss12.jpg" alt="Workshop">
+             
+            
+            
+            <img class="slider-img" src="image/ss3.jpg" alt="Workshop">
+            <img class="slider-img" src="image/ss4.jpg" alt="Workshop">
+            <img class="slider-img" src="image/ss5.jpg" alt="Workshop">
+            <img class="slider-img" src="image/ss6.jpg" alt="Workshop">
+            <img class="slider-img" src="image/ss7.jpg" alt="Workshop">
+           
+            <img class="slider-img" src="image/ss15.jpg" alt="Workshop">
+            <img class="slider-img" src="image/ss16.jpg" alt="Workshop">
+            <img class="slider-img" src="image/ss17.jpg" alt="Workshop">
+            <img class="slider-img" src="image/ss18.jpg" alt="Workshop">
             <img class="slider-img" src="image/s1.jpg" alt="Campus">
             <img class="slider-img" src="image/salaider1.jpeg" alt="Students">
             <img class="slider-img" src="image/salaider2.jpeg" alt="Tech Lab">
             <img class="slider-img" src="image/salaider3.jpg" alt="Workshop">
             <img class="slider-img" src="image/salaider5.jpeg" alt="Workshop">
             <img class="slider-img" src="image/salaider3.jpg" alt="Workshop">
+            <img class="slider-img" src="image/sabbir.jpg" alt="Workshop">
+            <img class="slider-img" src="image/ss1.jpg" alt="Workshop">
+            <img class="slider-img" src="image/ss2.jpg" alt="Workshop">
+            
           </div>
           <button class="slider-btn btn-prev" id="prevSlideBtn"><i class="fas fa-chevron-left"></i></button>
           <button class="slider-btn btn-next" id="nextSlideBtn"><i class="fas fa-chevron-right"></i></button>
           <div class="slider-dots" id="sliderDots"></div>
+          <div class="slide-counter" id="slideCounter">1 / 6</div>
         </div>
       </div>
 
@@ -243,7 +269,7 @@
     </div>
 
     <!-- COURSE STRUCTURE PAGE -->
-<div id="coursestructurePage" class="page-section d-none">
+    <div id="coursestructurePage" class="page-section d-none">
       <div class="card card-hover p-4">
         <div class="text-center mb-3">
           <i class="fas fa-book-open" style="font-size: 3rem; color:#1e5a6f;"></i>
@@ -343,7 +369,7 @@
     </div>
 
     <!-- SOFTWARE PAGE -->
-      <div id="softwarePage" class="page-section d-none">
+    <div id="softwarePage" class="page-section d-none">
       <div class="card card-hover p-4">
         <div class="text-center">
           <i class="fas fa-laptop-code" style="font-size: 3rem; color:#1e5a6f;"></i>
@@ -353,20 +379,17 @@
         <hr>
         <div class="row g-4 mt-1">
           <div class="col-md-4">
-            
             <div class="software-tag bg-white shadow-sm"><i class="fab fa-java"></i>
               <a href="https://www.java.com/en/download/" style"text-decoration:none; color:gray;">
                 <h5 class="fw-semibold">Java / NetBeans</h5>
               <p class="small text-secondary">OOP & Advanced Programming</p>
               </a>
             </div>
-            
           </div>
           <div class="col-md-4">
             <div class="software-tag bg-white shadow-sm"><i class="fas fa-database"></i>
               <a href="https://www.mysql.com/downloads/" style"text-decoration:none;color:gray;">
                 <h5 class="fw-semibold">MySQL / Oracle</h5>
-              
               <p class="small text-secondary">Database Management Lab</p>
                 </a>
             </div>
@@ -397,7 +420,6 @@
               <a href="https://developer.android.com/codelabs/basic-android-kotlin-compose-install-android-studio#2" style"text-decoration:none; color:gray;">
                 <h5 class="fw-semibold">Android Studio</h5></a>
               <p class="small text-secondary">Mobile App Development</p>
-              
             </div>
           </div>
           <div class="col-md-4">
@@ -425,7 +447,7 @@
     </div>
 
     <!-- CLASS TEST PAGE -->
-        <div id="classtestPage" class="page-section d-none">
+    <div id="classtestPage" class="page-section d-none">
       <h2 class="fw-bold mb-4"><i class="fas fa-file-pdf text-danger me-2"></i> Class Test Results</h2>
       <p class="text-muted mb-3">Click on any card to view/download PDF result.</p>
       <div class="row g-4">
@@ -439,8 +461,7 @@
             </div>
           </a>
         </div>
-
-          <div class="col-md-6 col-lg-4">
+        <div class="col-md-6 col-lg-4">
           <a href="pdf/CLASS TEST-2.pdf" class="result-link-card" target="_blank">
             <div class="card card-hover p-3 text-center h-100">
               <i class="fas fa-file-pdf fa-3x text-danger"></i>
@@ -450,10 +471,8 @@
             </div>
           </a>
         </div>
-
       </div>
     </div>
-
 
     <!-- MIDTERM PAGE -->
     <div id="midtermPage" class="page-section d-none">
@@ -498,7 +517,7 @@
       <div class="alert alert-warning mt-4">Replace # with actual semester PDF links.</div>
     </div>
 
-    <!-- ===================== ROUTINE PAGE (Updated Professional) ===================== -->
+    <!-- ROUTINE PAGE -->
     <div id="routinePage" class="page-section d-none">
       <div class="card card-hover p-4 border-0 shadow-sm">
         <div class="text-center mb-4">
@@ -506,8 +525,6 @@
           <h2 class="fw-bold mt-2" style="color: #0c4a6e;">📅 Class Routine</h2>
           <p class="text-muted">Computer Science & Technology Department</p>
         </div>
-
-        <!-- Header Info Box -->
         <div class="routine-header-info">
           <span class="info-item"><i class="fas fa-calendar-check"></i> <strong>Class Start:</strong> 20 July 2026</span>
           <span class="info-item"><i class="fas fa-tag"></i> <strong>Tech:</strong> CST</span>
@@ -515,7 +532,6 @@
           <span class="info-item"><i class="fas fa-hourglass-half"></i> <strong>Shift:</strong> 2<sup>nd</sup> (Afternoon)</span>
           <span class="info-item"><i class="fas fa-clock"></i> <strong>Total Load:</strong> 22</span>
         </div>
-
         <div class="table-responsive">
           <table class="routine-table table-bordered">
             <thead>
@@ -529,7 +545,6 @@
               </tr>
             </thead>
             <tbody>
-              <!-- Period 1 -->
               <tr>
                 <td class="time-col">1:30 – 3:45</td>
                 <td><span class="subject-code">28521</span> <span class="room-badge">C-2B</span> <span class="room-badge">SW-2</span></td>
@@ -538,7 +553,6 @@
                 <td><span class="subject-code">28522</span> <span class="room-badge">C-2A</span> <span class="room-badge">SW-1</span></td>
                 <td><span class="subject-code">28554</span> <span class="room-badge">C-5</span> <span class="room-badge">NWL</span></td>
               </tr>
-              <!-- Period 2 -->
               <tr>
                 <td class="time-col">2:15 – 3:00</td>
                 <td><span class="subject-code">28521</span> <span class="room-badge">C-2B</span> <span class="room-badge">SW-2</span></td>
@@ -547,7 +561,6 @@
                 <td><span class="subject-code">28522</span> <span class="room-badge">C-2A</span> <span class="room-badge">SW-1</span></td>
                 <td><span class="subject-code">28554</span> <span class="room-badge">C-5</span> <span class="room-badge">NWL</span></td>
               </tr>
-              <!-- Period 3 -->
               <tr>
                 <td class="time-col">3:00 – 3:45</td>
                 <td><span class="subject-code">28521</span> <span class="room-badge">C-2B</span> <span class="room-badge">SW-2</span></td>
@@ -556,7 +569,6 @@
                 <td><span class="subject-code">28521</span> <span class="room-badge">C-2A</span> <span class="room-badge">415</span></td>
                 <td><span class="subject-code">28554</span> <span class="room-badge">C-5</span> <span class="room-badge">NWL</span></td>
               </tr>
-              <!-- Break Row -->
               <tr class="break-row">
                 <td class="time-col">3:45 – 4:30</td>
                 <td><span class="subject-code">28554</span> <span class="room-badge">5th Semester</span> <span class="room-badge">R-512</span></td>
@@ -564,11 +576,7 @@
                 <td><span class="subject-code">28521</span> <span class="room-badge">C-2B</span> <span class="room-badge">414</span></td>
                 <td class="slot-empty">--</td>
                 <td><span class="subject-code">28521</span> <span class="room-badge">C-2A</span> <span class="room-badge">415</span></td>
-                
-    
               </tr>
-
-              <!-- Period 5 -->
               <tr>
                 <td class="time-col">4:30 – 5:15</td>
                 <td><span class="subject-code">28522</span> <span class="room-badge">C-2A</span> <span class="room-badge">SW-1</span></td>
@@ -577,7 +585,6 @@
                 <td class="slot-empty">—</td>
                 <td class="slot-empty">—</td>
               </tr>
-              <!-- Period 6 -->
               <tr>
                 <td class="time-col">5:15 – 6:00</td>
                 <td><span class="subject-code">28522</span> <span class="room-badge">C-2A</span> <span class="room-badge">SW-1</span></td>
@@ -586,7 +593,6 @@
                 <td class="slot-empty">—</td>
                 <td class="slot-empty">—</td>
               </tr>
-              <!-- Period 7 -->
               <tr>
                 <td class="time-col">6:00 – 6:45</td>
                 <td><span class="subject-code">28522</span> <span class="room-badge">C-2A</span> <span class="room-badge">SW-1</span></td>
@@ -598,7 +604,6 @@
             </tbody>
           </table>
         </div>
-
         <div class="mt-4 d-flex flex-wrap gap-3 justify-content-between align-items-center bg-light p-3 rounded-4">
           <div><i class="fas fa-info-circle text-warning me-2"></i> <strong>Note:</strong> Routine subject to change. Check department notice board for updates.</div>
           <div><span class="badge bg-primary me-1"><i class="fas fa-print"></i> Print</span> <span class="badge bg-secondary"><i class="fas fa-download"></i> Download</span></div>
@@ -607,38 +612,35 @@
     </div>
 
     <!-- NOTICE PAGE -->
-    <!-- NOTICE PAGE -->
-<div id="noticePage" class="page-section d-none">
-  <div class="d-flex justify-content-between align-items-center mb-4">
-    <h2 class="fw-bold"><i class="fas fa-bullhorn text-warning"></i> Notice Board</h2>
-  </div>
-  <div class="notice-list">
-    <!-- নতুন আইটেম যোগ করুন (শুরুর দিকে) -->
-    <div class="notice-item">
-      <h5 class="fw-bold"><i class="fas fa-file-pdf text-danger"></i> Semester Final Routine 2026</h5>
-      <p>Download the semester final examination routine for all departments. <br>
-        <a href="pdf/semesterfinal_2026.pdf" target="_blank" class="btn btn-danger btn-sm mt-2">
-          <i class="fas fa-download"></i> Download PDF
-        </a>
-      </p>
-      <small class="text-muted">Published: 15 July 2026</small>
+    <div id="noticePage" class="page-section d-none">
+      <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2 class="fw-bold"><i class="fas fa-bullhorn text-warning"></i> Notice Board</h2>
+      </div>
+      <div class="notice-list">
+        <div class="notice-item">
+          <h5 class="fw-bold"><i class="fas fa-file-pdf text-danger"></i> Semester Final Routine 2026</h5>
+          <p>Download the semester final examination routine for all departments. <br>
+            <a href="pdf/semesterfinal_2026.pdf" target="_blank" class="btn btn-danger btn-sm mt-2">
+              <i class="fas fa-download"></i> Download PDF
+            </a>
+          </p>
+          <small class="text-muted">Published: 15 July 2026</small>
+        </div>
+        <div class="notice-item">
+          <h5 class="fw-bold"><i class="fas fa-check-circle text-success"></i> Semester Final Exam Schedule Released</h5>
+          <p>Semester examinations from 6th August to 6th September 2026. <br><small class="text-muted">Published: 12 july 2026</small></p>
+        </div>
+        <div class="notice-item">
+          <h5 class="fw-bold"><i class="fas fa-user-graduate"></i> Semester Final Registration Extended</h5>
+          <p>Last date: 10th july 2026 with late fee.</p><small>Issued: 02 july 2026</small>
+        </div>
+        <div class="notice-item">
+          <h5 class="fw-bold"><i class="fas fa-laptop-code"></i> Web Dev Workshop (MERN Stack)</h5>
+          <p>20-21 April 2025, CST Lab 3</p><small>Posted: 01 April 2025</small>
+        </div>
+      </div>
+      <div class="mt-4 p-3 bg-white border rounded-3"><i class="fas fa-edit text-warning"></i> Admin can add notices manually.</div>
     </div>
-    
-    <div class="notice-item">
-      <h5 class="fw-bold"><i class="fas fa-check-circle text-success"></i> Semester Final Exam Schedule Released</h5>
-      <p>Semester examinations from 6th August to 6th September 2026. <br><small class="text-muted">Published: 12 july 2026</small></p>
-    </div>
-    <div class="notice-item">
-      <h5 class="fw-bold"><i class="fas fa-user-graduate"></i> Semester Final Registration Extended</h5>
-      <p>Last date: 10th july 2026 with late fee.</p><small>Issued: 02 july 2026</small>
-    </div>
-    <div class="notice-item">
-      <h5 class="fw-bold"><i class="fas fa-laptop-code"></i> Web Dev Workshop (MERN Stack)</h5>
-      <p>20-21 April 2025, CST Lab 3</p><small>Posted: 01 April 2025</small>
-    </div>
-  </div>
-  <div class="mt-4 p-3 bg-white border rounded-3"><i class="fas fa-edit text-warning"></i> Admin can add notices manually.</div>
-</div>
   </div>
 
   <!-- STUDENT LOGIN MODAL -->
@@ -646,9 +648,7 @@
     <div class="login-modal">
       <div class="modal-close" id="modalCloseBtn"><i class="fas fa-times"></i></div>
       <div class="login-header">
-        <div class="login-avatar">
-          <i class="fas fa-user-graduate"></i>
-        </div>
+        <div class="login-avatar"><i class="fas fa-user-graduate"></i></div>
         <h3>Student Login</h3>
         <p>Enter your credentials to access portal</p>
       </div>
@@ -705,52 +705,36 @@
   <script>
     // ========== MOBILE MENU AUTO CLOSE ==========
     document.addEventListener('DOMContentLoaded', function() {
-      // Get the navbar collapse element
       const navbarCollapse = document.getElementById('mainNavbar');
-      const bsCollapse = new bootstrap.Collapse(navbarCollapse, {
-        toggle: false
-      });
-
-      // Get all nav links inside the navbar
+      const bsCollapse = new bootstrap.Collapse(navbarCollapse, { toggle: false });
       const navLinks = document.querySelectorAll('#mainNavbar .nav-link');
-
       navLinks.forEach(function(link) {
         link.addEventListener('click', function(e) {
-          // Check if it's a mobile view (navbar is expanded/collapsed)
-          // We check if the collapse element has the 'show' class (Bootstrap 5)
           if (navbarCollapse.classList.contains('show')) {
-            // Close the mobile menu
             bsCollapse.hide();
           }
         });
       });
-
-      // Also handle the login trigger specially
       const loginTrigger = document.getElementById('studentLoginTriggerBtn');
       if (loginTrigger) {
         loginTrigger.addEventListener('click', function(e) {
           if (navbarCollapse.classList.contains('show')) {
             bsCollapse.hide();
           }
-          // The modal open is handled by the existing login modal script
         });
       }
     });
 
-    // Page navigation - Updated to include routine
+    // ========== PAGE NAVIGATION ==========
     const sections = { home: 'homePage', teacher: 'teacherPage', student: 'studentPage', coursestructure: 'coursestructurePage', software: 'softwarePage', classtest: 'classtestPage', midterm: 'midtermPage', semester: 'semesterPage', routine: 'routinePage', notice: 'noticePage' };
     
     function showPage(pageId) { 
-      // Hide all sections
       Object.values(sections).forEach(id => { 
         const el = document.getElementById(id); 
         if (el) el.classList.add('d-none'); 
       }); 
-      // Show target section
       const target = document.getElementById(pageId);
       if (target) target.classList.remove('d-none');
-      
-      // Update nav links
       document.querySelectorAll('.nav-link').forEach(link => { 
         link.classList.remove('active'); 
         const linkPage = link.getAttribute('data-page'); 
@@ -759,17 +743,14 @@
       window.scrollTo({ top: 0, behavior: 'smooth' }); 
     }
 
-    // Nav link click handlers
     document.querySelectorAll('.nav-link').forEach(link => {
       link.addEventListener('click', (e) => {
-        // Don't prevent default for login trigger - it has its own handler
         if (link.id === 'studentLoginTriggerBtn') return;
         e.preventDefault(); 
         const pageKey = link.getAttribute('data-page'); 
         if (pageKey && sections[pageKey]) showPage(sections[pageKey]);
       });
     });
-
     document.querySelectorAll('.nav-link-trigger').forEach(btn => {
       btn.addEventListener('click', (e) => { 
         e.preventDefault(); 
@@ -777,10 +758,9 @@
         if (pageKey && sections[pageKey]) showPage(sections[pageKey]);
       });
     });
-
-    // SHOW HOME PAGE FIRST
     showPage('homePage');
 
+    // ========== MINI CALENDAR ==========
     function generateMiniCalendar() { 
       const container = document.getElementById('inlineCalendar'); 
       if (!container) return; 
@@ -805,6 +785,7 @@
     } 
     generateMiniCalendar();
 
+    // ========== TEACHER DATA & CARDS ==========
     const teachersData = [
       { name: "সানোয়ার হোসেন অনিক", nameEn: "Sanowar Hossain Anik", designation: "Instructor (Computer Technology)", department: "Computer Science & Technology", office: "ঠাকুরগাঁও পলিটেকনিক ইনস্টিটিউট, ঠাকুরগাঁও", emailPrefix: "sanowar235", phoneOffice: "০১৭২৩৩৪৯০৮৯", mobile: "০১৭২৩৩৪৯০৮৯", roomNo: "৩০৩", batch: "BCS (not specified)" },
       { name: "মোঃ মহি উদ্দিন মাসুম", nameEn: "Mohi Uddin Masum", designation: "Instructor (Computer Technology)", department: "Computer Science & Technology", office: "ঠাকুরগাঁও পলিটেকনিক ইনস্টিটিউট, ঠাকুরগাঁও", emailPrefix: "masum.it50", phoneOffice: "০১৭৭৩১১২০৬৯", mobile: "০১৭৭৩১১২০৬৯", roomNo: "৩০৩" },
@@ -884,12 +865,13 @@
     } 
     renderCards();
 
-    // Image Slider
+    // ========== ENHANCED SLIDER ==========
     (function initSlider() { 
       const sliderImages = document.getElementById('sliderImages'); 
       const prevBtn = document.getElementById('prevSlideBtn'); 
       const nextBtn = document.getElementById('nextSlideBtn'); 
       const dotsContainer = document.getElementById('sliderDots'); 
+      const counter = document.getElementById('slideCounter');
       if (!sliderImages || !prevBtn || !nextBtn || !dotsContainer) return; 
       const slides = document.querySelectorAll('.slider-img'); 
       const totalSlides = slides.length; 
@@ -899,6 +881,7 @@
       function updateSlider() { 
         sliderImages.style.transform = `translateX(-${currentIndex * 100}%)`; 
         updateDots(); 
+        if (counter) counter.textContent = `${currentIndex + 1} / ${totalSlides}`;
       } 
       
       function updateDots() { 
@@ -954,7 +937,7 @@
       resetAutoSlide(); 
     })();
 
-    // Login Modal - FIXED: Only opens when login button is clicked
+    // ========== LOGIN MODAL ==========
     (function initLoginModal() {
       const modalOverlay = document.getElementById('loginModalOverlay');
       const modalClose = document.getElementById('modalCloseBtn');
@@ -967,7 +950,6 @@
       const successMsg = document.getElementById('loginSuccessMsg');
       const togglePass = document.getElementById('toggleLoginPass');
 
-      // Make sure modal is hidden initially
       modalOverlay.classList.remove('active');
 
       function openModal() { 
@@ -984,7 +966,6 @@
         document.body.style.overflow = ''; 
       }
 
-      // Only open modal when login button is clicked
       if (loginTrigger) { 
         loginTrigger.addEventListener('click', (e) => { 
           e.preventDefault(); 
