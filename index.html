@@ -16,8 +16,8 @@
   <!-- ======================= NAVBAR / MENU ======================= -->
   <nav class="navbar navbar-expand-lg sticky-top bg-white shadow-sm">
     <div class="container">
-      <a class="navbar-brand fw-bold" href="#">
-        <img class="brand-logo" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='48' fill='%231e5a6f'/%3E%3Ctext x='50' y='67' font-size='44' text-anchor='middle' fill='%23f5b042' font-weight='bold' font-family='Arial'%3ETPI%3C/text%3E%3C/svg%3E" alt="TPI Logo">
+      <a class="navbar-brand fw-bold" href="#" style="font-size: 17px;">
+        <img class="brand-logo" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='48' fill='%231e5a6f'/%3E%3Ctext x='50' y='67' font-size='40' text-anchor='middle' fill='%23f5b042' font-weight='bold' font-family='Arial'%3ETPI%3C/text%3E%3C/svg%3E" alt="TPI Logo">
         Thakurgaon Polytechnic<span class="text-warning"> Institute</span>
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
@@ -703,6 +703,40 @@
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
   <script>
+    // ========== MOBILE MENU AUTO CLOSE ==========
+    document.addEventListener('DOMContentLoaded', function() {
+      // Get the navbar collapse element
+      const navbarCollapse = document.getElementById('mainNavbar');
+      const bsCollapse = new bootstrap.Collapse(navbarCollapse, {
+        toggle: false
+      });
+
+      // Get all nav links inside the navbar
+      const navLinks = document.querySelectorAll('#mainNavbar .nav-link');
+
+      navLinks.forEach(function(link) {
+        link.addEventListener('click', function(e) {
+          // Check if it's a mobile view (navbar is expanded/collapsed)
+          // We check if the collapse element has the 'show' class (Bootstrap 5)
+          if (navbarCollapse.classList.contains('show')) {
+            // Close the mobile menu
+            bsCollapse.hide();
+          }
+        });
+      });
+
+      // Also handle the login trigger specially
+      const loginTrigger = document.getElementById('studentLoginTriggerBtn');
+      if (loginTrigger) {
+        loginTrigger.addEventListener('click', function(e) {
+          if (navbarCollapse.classList.contains('show')) {
+            bsCollapse.hide();
+          }
+          // The modal open is handled by the existing login modal script
+        });
+      }
+    });
+
     // Page navigation - Updated to include routine
     const sections = { home: 'homePage', teacher: 'teacherPage', student: 'studentPage', coursestructure: 'coursestructurePage', software: 'softwarePage', classtest: 'classtestPage', midterm: 'midtermPage', semester: 'semesterPage', routine: 'routinePage', notice: 'noticePage' };
     
